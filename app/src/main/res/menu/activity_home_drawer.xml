@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Meu perfil" />
+
+        <item
+            android:id="@+id/nav_m_party"
+            android:icon="@drawable/ic_meu_pedidos"
+            android:title="Meus pedidos" />
+        <item
+            android:id="@+id/nav_trash"
+            android:icon="@drawable/shopping_cart"
+            android:title="Meu carrinho" />
+
+        <item
+            android:title="Seções">
+
+            <menu>
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/filter_alimentos_nav"
+                        android:icon="@drawable/ic_food"
+                        android:title="Alimentos"/>
+
+                    <item
+                        android:id="@+id/filter_frios_nav"
+                        android:icon="@drawable/ic_frios"
+                        android:title="Frios"/>
+
+                    <item
+                        android:id="@+id/filter_bebidas_nav"
+                        android:icon="@drawable/ic_bebidas"
+                        android:title="Bebidas"/>
+
+                    <item
+                        android:id="@+id/filter_bar_nav"
+                        android:icon="@drawable/ic_bar"
+                        android:title="Bar"/>
+
+                    <item
+                        android:id="@+id/filter_acogue_nav"
+                        android:icon="@drawable/ic_acoge"
+                        android:title="Açougue"/>
+
+                    <item
+                        android:id="@+id/filter_padaria_nav"
+                        android:icon="@drawable/ic_padaria"
+                        android:title="Padaria"/>
+
+                    <item
+                        android:id="@+id/filter_hortfruti_nav"
+                        android:icon="@drawable/ic_hortifruti"
+                        android:title="Hortifruti"/>
+
+                    <item
+                        android:icon="@drawable/ic_limpesa"
+                        android:id="@+id/filter_limpesa_nav"
+                        android:title="Limpeza"/>
+
+                    <item
+                        android:id="@+id/filter_papelaria_nav"
+                        android:icon="@drawable/ic_papelaria"
+                        android:title="Papelaria"/>
+
+                    <item
+                        android:id="@+id/filter_cosmeticos_nav"
+                        android:icon="@drawable/ic_cosmeticos"
+                        android:title="Cosmeticos"/>
+
+                    <item
+                        android:id="@+id/filter_outros_nav"
+                        android:icon="@drawable/add"
+                        android:title="outros"/>
+                </group>
+            </menu>
+        </item>
+
+    </group>
+
+    <item
+        android:title="Informações">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contato"
+                android:title="Contato"/>
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="Sobre"/>
+        </menu>
+    </item>
+</menu>

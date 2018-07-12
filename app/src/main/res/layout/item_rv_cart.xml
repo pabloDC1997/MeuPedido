@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/item_cart_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/fontColor"
+            android:textSize="16sp"
+            android:text="Descrição"/>
+
+        <TextView
+            android:id="@+id/item_cart_quantity"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fontColor"
+            android:textSize="12sp"
+            android:text="Qtd"/>
+
+        <TextView
+            android:id="@+id/item_cart_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@color/fontColor"
+            android:textSize="12sp"
+            android:paddingEnd="5dp"
+            android:paddingRight="5dp"
+            android:text="Preço"/>
+    </LinearLayout>
+
+</LinearLayout>

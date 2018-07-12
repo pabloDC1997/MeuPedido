@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/nav_profile_companies"
+            android:icon="@drawable/ic_profile"
+            android:title="Meu perfil" />
+
+        <item
+            android:id="@+id/nav_my_orders_companies"
+            android:icon="@drawable/ic_meu_pedidos"
+            android:title="Meus pedidos" />
+
+    </group>
+
+    <item
+        android:title="Informações">
+        <menu>
+            <item
+                android:id="@+id/nav_contact_companies"
+                android:icon="@drawable/ic_contato"
+                android:title="Contato"/>
+
+            <item
+                android:id="@+id/nav_about_companies"
+                android:icon="@drawable/ic_about"
+                android:title="Sobre"/>
+        </menu>
+    </item>
+</menu>

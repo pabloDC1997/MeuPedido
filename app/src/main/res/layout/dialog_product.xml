@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:elevation="50dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view_product_dialog"
+                android:src="@drawable/imagem_produto"
+                android:padding="5dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:tint="@android:color/darker_gray"
+                android:layout_marginBottom="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rv_description"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/image_view_product_dialog">
+
+                <TextView
+                    android:id="@+id/description_product_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:text="Pão de queijo frito com batata palha"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_btns_add_and_sub"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/image_view_product_dialog">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_sub_dialog"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/circle_sub"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/color_border_cicle_buttom_red"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/text_view_qtd_products_dialog"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="0"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_add_dialog"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/circle_add"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/color_border_cicle_buttom_green"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_view_price_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_description"
+                android:padding="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:maxLines="1"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif"
+                android:text="R$ 00,00"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

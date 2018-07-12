@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Meu Pedido</string>
+    <string name="total">Total: R$ </string>
+    <string name="search">Pesquisar...</string>
+    <string name="default_price_view">0,00</string>
+    <string name="cancel">Cancelar</string>
+    <string name="add">Adicionar</string>
+    <string name="text_make_an_account">Ainda não tem uma conta?</string>
+    <string name="abri_carrinho">Carrinho</string>
+    <string name="user">Usuário:</string>
+    <string name="password">Senha:</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="meu_perfil">Meu perfil</string>
+    <string name="meus_pedidos">Meus pedidos</string>
+</resources>

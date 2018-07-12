@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.app.devpai.meupedido.ui.paymanent.PaymentActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_image_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/black_border">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/credit_card_1"
+            android:tint="@android:color/darker_gray"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/darker_gray"
+            android:src="@drawable/credit_card_1"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/credit_card_1"
+            android:tint="@android:color/darker_gray"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/darker_gray"
+            android:src="@drawable/credit_card_1"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/ll_image_cards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Numero do cartão"/>
+
+            <EditText
+                android:id="@+id/payment_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="0000 0000 0000 0000"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/card_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Validade"/>
+                <EditText
+                    android:id="@+id/payment_card_date"
+                    android:layout_below="@id/card_date"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:inputType="date"
+                    android:hint="MM/AAAA"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/payment_card_date"
+                    android:layout_margin="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Codigo de segurança"/>
+                <EditText
+                    android:layout_toRightOf="@+id/payment_card_date"
+                    android:layout_below="@id/card_date"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="CVV"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Nome impresso no cartão"/>
+
+            <EditText
+                android:id="@+id/payment_card_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="CPF do titular do cartão"/>
+
+            <EditText
+                android:id="@+id/payment_card_cpf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="000.000.000-00"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_payment_finish_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="FINALIZAR COMPRA"/>
+
+</RelativeLayout>

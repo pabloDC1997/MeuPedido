@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#083b66</color>
+    <color name="colorPrimaryDark">#041f36</color>
+    <color name="colorAccent">#74d04c</color>
+    <color name="colorPrimaryTranparent">#260d47a1</color>
+    <color name="fontColor">#000000</color>
+    <color name="lightBueBackgroud">#ffffff</color>
+    <color name="lightBueBackgroudTransparent">#89d5e7ff</color>
+    <color name="lightBueBackgroudSolid">#e3e6e9</color>
+    <color name="colorViewLight">#545657</color>
+    <color name="colorViewDarkTransparent">#6e000000</color>
+    <color name="white">#ffffff</color>
+    <color name="whiteTransparent">#edffffff</color>
+    <color name="grennTransparent">#4f02ef05</color>
+    <color name="facebookColor">#2d5f99</color>
+    <color name="color_theme_splash">#ffffff</color>
+
+    <color name="color_border_cicle_buttom_red">#af2729</color>
+    <color name="color_border_cicle_buttom_green">#389343</color>
+
+    <color name="color_background_buttom">#f9f9f9</color>
+</resources>

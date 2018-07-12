@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="50dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view_product_dialog"
+                android:src="@drawable/imagem_produto"
+                android:padding="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:tint="@android:color/darker_gray"
+                android:background="@android:color/transparent"
+                android:layout_marginBottom="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_desc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size__view_description_p_item_rv"
+                android:layout_toRightOf="@+id/image_view_product_dialog">
+
+                <TextView
+                    android:id="@+id/text_view_product_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_size_description_item_rv"
+                    android:maxLines="3"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:text="Pão de queijo frito com batata palha"/>
+
+                <ImageView
+                    android:id="@+id/check_mark"
+                    android:src="@drawable/my_check_mark"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:tint="@color/grennTransparent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:elevation="10dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_view_price_iten_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_view_product_dialog"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:lines="1"
+                android:gravity="center"
+                android:textColor="@android:color/darker_gray"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size_price_item_rv"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:fontFamily="sans-serif"
+                android:text="R$ 00,00/un"/>
+
+            <View
+                android:layout_above="@+id/rv_btns_item"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <RelativeLayout
+                android:id="@+id/rv_btns_item"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/text_view_price_iten_rv">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_sub_item_rv"
+                        android:layout_width="@dimen/size_cicle_buttom_item_rv"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@color/color_background_buttom"
+                        android:src="@drawable/circle_sub">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="false"
+                            android:tint="@color/color_border_cicle_buttom_red"
+                            android:src="@drawable/minus"/>
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text_view_qtd_item_rv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="0"/>
+
+                    <RelativeLayout
+                        android:id="@+id/btn_add_item_rv"
+                        android:layout_width="@dimen/size_cicle_buttom_item_rv"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@color/color_background_buttom">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="false"
+                            android:tint="@color/color_border_cicle_buttom_green"
+                            android:src="@drawable/add"/>
+
+                        </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
